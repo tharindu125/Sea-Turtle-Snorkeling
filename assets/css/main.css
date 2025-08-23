@@ -461,11 +461,30 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: url('../img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_07.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
   position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Adjust darkness */
+  z-index: 1;
+}
+
+.footer * {
+  position: relative;
+  z-index: 2;
 }
 
 .footer h3 {
@@ -601,14 +620,28 @@ h6 {
 --------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: url('../img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_09.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 160px 0 80px 0;
   text-align: center;
   position: relative;
+  z-index: 1;
 }
+
+/* Add Black Overlay */
+.page-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity here */
+  z-index: -1;
+}
+
 
 .page-title h1 {
   font-size: 42px;
@@ -1213,7 +1246,7 @@ section,
   position: absolute;
   height: 105%;
   width: 105%;
-  background-image: conic-gradient(from var(--angle) ,transparent 85%,rgba(0, 191, 255, 0.771));
+  background-image: conic-gradient(from var(--angle) ,transparent 85%,rgba(0, 255, 38, 0.771));
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -1375,9 +1408,9 @@ section,
 --------------------------------------------------------------*/
 
 .gallery {
-  height: 115vh;
+  /* height: 115vh; */
   margin: 0;
-  background: linear-gradient(45deg, #1aee79,#038203e3);  
+  background: linear-gradient(45deg, #00ff73,#005000e3);  
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
   color: white;
@@ -1406,10 +1439,23 @@ section,
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
+  width: 500px !important;
 }
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Add spacing between images */
+.carousel-inner {
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------

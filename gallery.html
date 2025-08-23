@@ -168,37 +168,63 @@
 
     <body class="portfolio-details-page">
 
-        <header id="header" class="header d-flex align-items-center fixed-top">
+         <header id="header" class="header d-flex align-items-center fixed-top">
             <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-                <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-                    <img src="assets/img/logo.png" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" loading="lazy">
-                    <h2 class="sitename nav_title">Sea Turtle Snorkeling Mirissa</h2>
+
+            <!-- Logo -->
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <img src="assets/img/logo.png" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" loading="lazy">
+                <h2 class="sitename nav_title">Sea Turtle Snorkeling Mirissa</h2>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="" class="active">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+
+                <!-- Social Icons INSIDE Mobile Menu -->
+                <li class="d-xl-none text-center mt-3">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                    <a href="#" target="_blank" style="color:#1877F2;">
+                        <i class="bi bi-facebook" style="font-size:1.3rem;"></i>
+                    </a>
+                    <a href="#" target="_blank" style="color:#E4405F;">
+                        <i class="bi bi-instagram" style="font-size:1.3rem;"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="assets/img/tripadvisor-logo.svg" alt="TripAdvisor" style="height:22px;width:22px;">
+                    </a>
+                    <a href="#" target="_blank" style="color:#FF0000;">
+                        <i class="bi bi-youtube" style="font-size:1.3rem;"></i>
+                    </a>
+                    </div>
+                </li>
+
+
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <!-- Desktop Social Icons -->
+            <div class="header-social-links d-none d-xl-flex">
+                <a href="#" target="_blank" style="color: #1877F2; margin-right: 10px;">
+                <i class="bi bi-facebook" style="font-size: 1rem;"></i>
                 </a>
-                <nav id="navmenu" class="navmenu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="gallery.html" class="active">Gallery</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-                </nav>
-                <!-- <div class="header-social-links"> -->
-                    <!-- <a href="#" target="_blank" style="color: #1877F2; margin-right: 10px;">
-                        <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="" target="_blank" style="color: #E4405F; margin-right: 10px;">
-                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="" target="_blank" style="margin-right: 10px;">
-                        <img src="assets/img/tripadvisor-logo.svg" alt="TripAdvisor" style="height: 24px; width: 24px;">
-                    </a>
-                    <a href="#" target="_blank" style="color: #FF0000;">
-                        <i class="bi bi-youtube" style="font-size: 1.5rem;"></i>
-                    </a> -->
-                <!-- </div> -->
-        
+                <a href="#" target="_blank" style="color: #E4405F; margin-right: 10px;">
+                <i class="bi bi-instagram" style="font-size: 1rem;"></i>
+                </a>
+                <a href="#" target="_blank" style="margin-right: 10px;">
+                <img src="assets/img/tripadvisor-logo.svg" alt="TripAdvisor" style="height: 20px; width: 20px;">
+                </a>
+                <a href="#" target="_blank" style="color: #FF0000;">
+                <i class="bi bi-youtube" style="font-size: 1rem;"></i>
+                </a>
+            </div>
             </div>
         </header>
 
@@ -233,129 +259,129 @@
 
                         <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
                             <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">Fishing Tours</li>
-                            <li data-filter=".filter-product">Snorkeling With Whales</li>
-                            <li data-filter=".filter-branding">Boat Tours</li>
-                            <li data-filter=".filter-books">Snorkeling With Turtles</li>
+                            <li data-filter=".filter-turtle_snorkeling">Snorkeling With Turtles</li>
+                            <li data-filter=".filter-diving">Diving Tours</li>
+                            <li data-filter=".filter-fishing">Fishing Tours</li>
+                            <li data-filter=".filter-whale_snorkeling">Snorkeling With Whales</li>
                         </ul><!-- End Portfolio Filters -->
 
-                        <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row g-2 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-turtle_snorkeling">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/Gallery/Fishing-Tours-In-Mirissa.jpg" class="img-fluid" alt="Fishing Tours In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_09.jpg" class="img-fluid" alt="Fishing Tours In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/Gallery/Fishing-Tours-In-Mirissa.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_09.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-diving">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/Snorkeling-With-Whales-In-mirissa.jpg" class="img-fluid" alt="Snorkeling With Whales In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_diving_04.jpg" class="img-fluid" alt="Snorkeling With Whales In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/Snorkeling-With-Whales-In-mirissa.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_diving_04.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-diving">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/New folder/Best-Boat-In-Mirissa.jpg" class="img-fluid" alt="Best Boat In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_diving_01.jpg" class="img-fluid" alt="Best Boat In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/New folder/Best-Boat-In-Mirissa.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_diving_01.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-turtle_snorkeling">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/New folder/Beautiful-Turtle-In-Mirissa.jpg" class="img-fluid" alt="Beautiful Turtle In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_05.jpg" class="img-fluid" alt="Beautiful Turtle In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/New folder/Beautiful-Turtle-In-Mirissa.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_05.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-fishing">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/New folder/Deep-Sea-Fishing-Tour-In-Mirissa.jpg" class="img-fluid" alt="Deep Sea Fishing Tour In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/fishing_tour.jpg" class="img-fluid" alt="Deep Sea Fishing Tour In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/New folder/Deep-Sea-Fishing-Tour-In-Mirissa.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/fishing_tour.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-turtle_snorkeling">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/Snorkeling-With-Whales-In-mirissa.jpg" class="img-fluid" alt="Snorkeling With Whales In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_02.jpg" class="img-fluid" alt="Snorkeling With Whales In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/Snorkeling-With-Whales-In-mirissa.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_02.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-diving">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/New folder/Boat-Tour-In-Mirissa.jpg" class="img-fluid" alt="Boat Tour In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_diving_02.jpg" class="img-fluid" alt="Boat Tour In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/New folder/Boat-Tour-In-Mirissa.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_diving_02.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-turtle_snorkeling">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/Gallery/Snorkeling-With-Turtles-In-Mirissa.jpg" class="img-fluid" alt="Snorkeling With Turtles In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_06.jpg" class="img-fluid" alt="Snorkeling With Turtles In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/Gallery/Snorkeling-With-Turtles-In-Mirissa.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_06.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-fishing">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/New folder/Fishing-Tour-In-Mirissa.jpg" class="img-fluid" alt="Fishing Tour In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_fishing_01.jpg" class="img-fluid" alt="Fishing Tour In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/New folder/Fishing-Tour-In-Mirissa.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_fishing_01.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-turtle_snorkeling">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/Snorkeling-With-Whales-In-mirissa.jpg" class="img-fluid" alt="Snorkeling With Whales In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_03.jpg" class="img-fluid" alt="Snorkeling With Whales In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/Snorkeling-With-Whales-In-mirissa.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_03.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-diving">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/Gallery/Boat-Tours-In-Mirissa.jpg" class="img-fluid" alt="Boat Tours In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_diving_03.jpg" class="img-fluid" alt="Boat Tours In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/Gallery/Boat-Tours-In-Mirissa.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_diving_03.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>
                             </div><!-- End Portfolio Item -->
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-turtle_snorkeling">
                                 <div class="portfolio-content h-100">
-                                    <img src="assets/img/gallery/Gallery/Snorkeling-With-Beautiful-Turtles-In-Mirissa.jpg" class="img-fluid" alt="Snorkeling With Beautiful Turtles In Mirissa" loading="lazy">
+                                    <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_07.jpg" class="img-fluid" alt="Snorkeling With Beautiful Turtles In Mirissa" loading="lazy">
                                     <div class="portfolio-info">
-                                        <a href="assets/img/gallery/Gallery/Snorkeling-With-Beautiful-Turtles-In-Mirissa.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_07.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         
                                     </div>
                                 </div>

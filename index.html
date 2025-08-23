@@ -171,11 +171,13 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
+      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="assets/img/logo.png" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" loading="lazy">
         <h2 class="sitename nav_title">Sea Turtle Snorkeling Mirissa</h2>
       </a>
 
+      <!-- Navigation Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
@@ -183,25 +185,46 @@
           <li><a href="#services">Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+
+          <!-- Social Icons INSIDE Mobile Menu -->
+          <li class="d-xl-none text-center mt-3">
+            <div class="d-flex flex-column align-items-center gap-3">
+              <a href="#" target="_blank" style="color:#1877F2;">
+                <i class="bi bi-facebook" style="font-size:1.3rem;"></i>
+              </a>
+              <a href="#" target="_blank" style="color:#E4405F;">
+                <i class="bi bi-instagram" style="font-size:1.3rem;"></i>
+              </a>
+              <a href="#" target="_blank">
+                <img src="assets/img/tripadvisor-logo.svg" alt="TripAdvisor" style="height:22px;width:22px;">
+              </a>
+              <a href="#" target="_blank" style="color:#FF0000;">
+                <i class="bi bi-youtube" style="font-size:1.3rem;"></i>
+              </a>
+            </div>
+          </li>
+
+
         </ul>
+
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <!-- <div class="header-social-links"> -->
-        <!-- <a href="#" target="_blank" style="color: #1877F2; margin-right: 10px;">
-          <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+      <!-- Desktop Social Icons -->
+      <div class="header-social-links d-none d-xl-flex">
+        <a href="#" target="_blank" style="color: #1877F2; margin-right: 10px;">
+          <i class="bi bi-facebook" style="font-size: 1rem;"></i>
         </a>
-        <a href="" target="_blank" style="color: #E4405F; margin-right: 10px;">
-          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        <a href="#" target="_blank" style="color: #E4405F; margin-right: 10px;">
+          <i class="bi bi-instagram" style="font-size: 1rem;"></i>
         </a>
-        <a href="" target="_blank" style="margin-right: 10px;">
-          <img src="assets/img/tripadvisor-logo.svg" alt="TripAdvisor" style="height: 24px; width: 24px;">
+        <a href="#" target="_blank" style="margin-right: 10px;">
+          <img src="assets/img/tripadvisor-logo.svg" alt="TripAdvisor" style="height: 20px; width: 20px;">
         </a>
         <a href="#" target="_blank" style="color: #FF0000;">
-          <i class="bi bi-youtube" style="font-size: 1.5rem;"></i>
-        </a> -->
-      <!-- </div> -->
-
+          <i class="bi bi-youtube" style="font-size: 1rem;"></i>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -210,7 +233,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" data-aos="fade-in" loading="lazy">
+      <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_06.jpg" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" data-aos="fade-in" loading="lazy">
 
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="swiper init-swiper">
@@ -242,7 +265,7 @@
 
     </section><!-- /Hero Section -->
 
-        <!-- About Section -->
+    <!-- About Section -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
@@ -255,7 +278,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/Sea_Turtle_Snorkeling/fishing_tour.jpg" class="img-fluid" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" loading="lazy">
+            <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_08.jpg" class="img-fluid" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" loading="lazy">
           </div>
           <div class="col-lg-8 content">
             <h2>Discover the magic of the ocean with Sea Turtle Snorkeling!</h2>
@@ -344,77 +367,63 @@
         </p>
       </div><!-- End Section Title -->
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-0 justify-content-center">
-          <div class="swiper init-swiper">
-            <div class="swiper-wrapper">
+      <div id="multiImageSlider" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-              <div class="swiper-slide d-flex justify-content-center align-items-center">
-                <div class="row g-0 justify-content-center">
-                  <div class="col-lg-5 col-md-6 m-2">
-                    <div class="gallery-item">
-                      <a href="assets/img/gallery/New folder/Beautiful-Turtle-In-Mirissa.jpg" class="glightbox"
-                        data-gallery="images-gallery">
-                        <img src="assets/img/gallery/New folder/Beautiful-Turtle-In-Mirissa.jpg" alt="Beautiful Turtle In Mirissa / Sri Lanka" class="img-fluid" loading="lazy">
-                      </a>
-                    </div>
-                  </div><!-- End Gallery Item -->
-                  <div class="col-lg-5 col-md-6 m-2">
-                    <div class="gallery-item">
-                      <a href="assets/img/gallery/New folder/Fishing-Tour-In-Mirissa.jpg" class="glightbox"
-                        data-gallery="images-gallery">
-                        <img src="assets/img/gallery/New folder/Fishing-Tour-In-Mirissa.jpg" alt="FishingTour In Mirissa" class="img-fluid" loading="lazy">
-                      </a>
-                    </div>
-                  </div><!-- End Gallery Item -->
-                </div>
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_01.jpg" class="d-block w-100" alt="Image 1">
               </div>
-
-              <div class="swiper-slide d-flex justify-content-center align-items-center">
-                <div class="row g-0 justify-content-center">
-                  <div class="col-lg-5 col-md-6 m-2">
-                    <div class="gallery-item">
-                      <a href="assets/img/gallery/New folder/Boat-Tour-In-Mirissa.jpg" class="glightbox"
-                        data-gallery="images-gallery">
-                        <img src="assets/img/gallery/New folder/Boat-Tour-In-Mirissa.jpg" alt="Boat Tour In Mirissa" class="img-fluid" loading="lazy">
-                      </a>
-                    </div>
-                  </div><!-- End Gallery Item -->
-                  <div class="col-lg-5 col-md-6 m-2">
-                    <div class="gallery-item">
-                      <a href="assets/img/gallery/New folder/Deep-Sea-Fishing-Tour-In-Mirissa.jpg" class="glightbox"
-                        data-gallery="images-gallery">
-                        <img src="assets/img/gallery/New folder/Deep-Sea-Fishing-Tour-In-Mirissa.jpg" alt="Deep Sea Fishing Tour In Mirissa" class="img-fluid" loading="lazy">
-                      </a>
-                    </div>
-                  </div><!-- End Gallery Item -->
-                </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_02.jpg" class="d-block w-100" alt="Image 2">
               </div>
-
-              <div class="swiper-slide d-flex justify-content-center align-items-center">
-                <div class="row g-0 justify-content-center">
-                  <div class="col-lg-5 col-md-6 m-2">
-                    <div class="gallery-item">
-                      <a href="assets/img/gallery/New folder/Best-Boat-In-Mirissa.jpg" class="glightbox"
-                        data-gallery="images-gallery">
-                        <img src="assets/img/gallery/New folder/Best-Boat-In-Mirissa.jpg" alt="Best Boat In Mirissa" class="img-fluid" loading="lazy">
-                      </a>
-                    </div>
-                  </div><!-- End Gallery Item -->
-                  <div class="col-lg-5 col-md-6 m-2">
-                    <div class="gallery-item">
-                      <a href="assets/img/gallery/New folder/Whale-Snorkeling-Tours-In-Mirissa.jpg" class="glightbox"
-                        data-gallery="images-gallery">
-                        <img src="assets/img/gallery/New folder/Whale-Snorkeling-Tours-In-Mirissa.jpg" alt="Whale Snorkeling Tours In Mirissa" class="img-fluid" loading="lazy">
-                      </a>
-                    </div>
-                  </div><!-- End Gallery Item -->
-                </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_03.jpg" class="d-block w-100" alt="Image 3">
               </div>
-
             </div>
           </div>
+
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_04.jpg" class="d-block w-100" alt="Image 4">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_05.jpg" class="d-block w-100" alt="Image 5">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_06.jpg" class="d-block w-100" alt="Image 6">
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_07.jpg" class="d-block w-100" alt="Image 7">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_08.jpg" class="d-block w-100" alt="Image 8">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_09.jpg" class="d-block w-100" alt="Image 9">
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#multiImageSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#multiImageSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
 
     </section><!-- /Gallery Section -->
@@ -589,7 +598,7 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" loading="lazy">
+      <img src="assets/img/Sea_Turtle_Snorkeling/sea_turtle_snorkeling_05.jpg" class="testimonials-bg" alt="Sea Turtle Snorkeling Mirissa / Sri Lanka" loading="lazy">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -827,6 +836,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
