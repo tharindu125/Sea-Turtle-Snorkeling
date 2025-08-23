@@ -1214,22 +1214,20 @@ section,
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing .pricing-item {
-  /* background-color: var(--surface-color); */
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
   padding: 5px 5px;
-  /* text-align: center; */
   border-radius: 8px;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  /* background: #ffffff; */
+  min-height: 910px !important;
 }
 
 .pricing .pricing-item-content {
-  background-color: rgb(255, 255, 255); /* Your black background */
-  padding: 20px; /* Adjust for desired inner padding */
-  border-radius: 6px; /* Match or slightly smaller than outer border-radius */
-  z-index: 2; /* Ensure it sits above the animation */
+  background-color: rgb(255, 255, 255); 
+  padding: 20px;
+  border-radius: 6px;
+  z-index: 2;
   position: relative;
   text-align: center;
 }
@@ -1279,16 +1277,16 @@ section,
 }
 
 .pricing .pricing-item h3 {
-  color: rgb(246, 189, 1);
+  color: rgb(105, 190, 0);
   text-align: center;
-  padding: 15px;
-  margin-top: 15px;
-  font-size: 20px;
+  padding: 10px;
+  margin-top: 0;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .pricing .pricing-item p {
-  margin-top: 15px;
+  margin-top: 14px;
   text-align: left;
 }
 
@@ -1335,11 +1333,10 @@ section,
 .pricing .pricing-item .btn-buy {
   color: white;
   background-color: var(--accent-color);
-  /* border: 1px solid var(--nav-dropdown-color); */
   display: inline-block;
-  padding: 10px 20px 10px 20px;
+  padding: 8px 15px 8px 15px;
   border-radius: 50px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: var(--heading-font);
   font-weight: 600;
   transition: 0.3s;
@@ -1376,11 +1373,15 @@ section,
 
 .package-highloghts {
   margin-left: 10px;
-  font-size: 15px;
+  margin-bottom: 0;
+  font-size: 13px;
   color: #6d6c6c;
   font-weight: 500;
 }
 
+.package-content {
+  font-size: 14px;
+}
 /*--------------------------------------------------------------
 # Pricing 2 Section
 --------------------------------------------------------------*/
